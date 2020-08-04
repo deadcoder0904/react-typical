@@ -1,0 +1,22 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "browsers": "last 2 Chrome versions"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-transform-for-of",
+    "@babel/plugin-transform-destructuring",
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "helpers": false
+      }
+    ]
+  ]
+}
