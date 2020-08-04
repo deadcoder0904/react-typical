@@ -1,6 +1,13 @@
 {
+  "name": "@deadcoder0904/react-typical",
   "version": "0.1.0",
   "license": "MIT",
+  "repository": "deadcoder0904/react-typical",
+  "author": {
+    "name": "Akshay Kadam",
+    "email": "akshaykadam0904@gmail.com",
+    "url": "https://akshaykadam.com"
+  },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -39,8 +46,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@deadcoder0904/react-typical",
-  "author": "Akshay Kadam",
   "module": "dist/react-typical.esm.js",
   "devDependencies": {
     "@babel/core": "^7.10.5",
