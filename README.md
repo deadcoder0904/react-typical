@@ -96,6 +96,14 @@ const Index = () => (
 )
 ```
 
+### Default styles
+
+Get the blinking cursor effect by importing `dist/styles.min.css` as follows:
+
+```tsx
+import '@deadcoder0904/react-typical/dist/styles.min.css'
+```
+
 ## API
 
 | property  | required | type   | example                                 |
