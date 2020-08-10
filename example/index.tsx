@@ -2,6 +2,7 @@ import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { ReactTypical } from '../.';
+import '../dist/styles.min.css';
 
 const App = () => {
   const hypeText = ['Creator', 'Entrepreneur', 'Doer', 'Lone Wolf'];

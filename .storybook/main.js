@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   stories: ['../stories/**/*.stories.(ts|tsx)'],
   addons: [
@@ -20,6 +22,17 @@ module.exports = {
           loader: require.resolve('react-docgen-typescript-loader'),
         },
       ],
+    });
+
+    // Remove the existing css rule
+    config.module.rules = config.module.rules.filter(
+      f => f.test.toString() !== '/\\.css$/'
+    );
+
+    config.module.rules.push({
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader'],
+      include: path.resolve(__dirname, '../src'),
     });
 
     config.resolve.extensions.push('.ts', '.tsx');
